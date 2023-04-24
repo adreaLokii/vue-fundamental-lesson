@@ -12,6 +12,11 @@ module.exports = {
     container: {
       padding: '10rem',
     },
+    extend: {
+      spacing: {
+        '128': '32rem',
+      }
+    }
   },
   plugins: [],
 }

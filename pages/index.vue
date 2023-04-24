@@ -1,15 +1,18 @@
 <template>
   <div class="mt-24">
-    <h1 class="text-5xl flex justify-center">
-      HOME
-    </h1>
+    <UITitleCenter>
+      Home
+    </UITitleCenter>
     <BlockLeftContent />
   </div>
 </template>
 
 <script>
 export default {
-  name: "index"
+  name: "index",
+  mounted() {
+    console.log(this.$store)
+  }
 }
 </script>
 

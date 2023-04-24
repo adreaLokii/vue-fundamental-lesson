@@ -1,6 +1,7 @@
 <template>
-  <div class="container h-screen bg-slate-200">
-    <SidebarTopMenu class="flex w-1/2 ml-auto justify-end pt-6">
+  <div class="container mx-auto min-h-screen">
+    <SidebarTopMenu class="flex items-center ml-auto justify-between pt-6">
+      <CreativeLightSwitcher />
       <UITopLink v-for="item in links" :link="item.location" class="text-grey-500 pr-10 text-2xl last:pr-0">
           {{ item.title }}
       </UITopLink>
@@ -28,6 +29,11 @@ export default {
         id: 3,
         title: 'Creative',
         location: '/creative'
+      },
+      {
+        id: 4,
+        title: 'Vue fundamental',
+        location: '/vueFundamental'
       }]
     }
   },

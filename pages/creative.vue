@@ -1,13 +1,21 @@
 <template>
-  <h1>HELLO CREATIVE</h1>
+  <div>
+    <BlockCenterContent class="mt-24">
+      <CreativeCardSplitHovers />
+    </BlockCenterContent>
+
+    <BlockCenterContent class="mt-24">
+      <CreativeOverlaySlider />
+    </BlockCenterContent>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "creative"
+  name: "creative",
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 
 </style>
